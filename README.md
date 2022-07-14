@@ -37,4 +37,4 @@ Just Give Me the Results
 How Does the Game Look Like?
 =============================
 
-![Circus Game](https://raw.githubusercontent.com/toomasr/circus-snakes-and-ladders/master/circus.jpeg)
+![Circus Game](https://github.com/toomasr/circus-snakes-and-ladders/blob/main/circus.jpeg?raw=true)
