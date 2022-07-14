@@ -35,7 +35,6 @@ class Game:
     def __init__(self):
         # we assume that your meeple/button is on tile no 1
         self.pos = 1
-        self.actualMoves = []
 
     def makeMove(self, noTiles):
         # if we make a move and this move lands pass the final
@@ -45,8 +44,7 @@ class Game:
             self.pos = Game.FINAL_TILE - ((self.pos + noTiles) - Game.FINAL_TILE)
         else:
             self.pos = self.pos + noTiles
-        
-        self.actualMoves.append(noTiles)
+
         # if we have a jump/fall then we need to execute that
         if self.pos in rules:
             self.pos = rules[self.pos]
@@ -62,7 +60,7 @@ if __name__ == "__main__":
 
     while(True):
         game = Game()
-        noMoves = 1
+        noMoves = 0
         while(True):
             n = random.randint(1,6)
             game.makeMove(n)
